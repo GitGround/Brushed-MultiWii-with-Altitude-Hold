@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.2</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{07b459b4-8d76-4638-bc6d-a459ba2d616b}</ProjectGuid>
+    <avrdevice>atmega328p</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>MultiWii</AssemblyName>
+    <Name>MultiWii</Name>
+    <RootNamespace>MultiWii</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>
+    </OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.10.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
+      <Value>C:/Users/garage/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>../../MultiWii</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
+      <Value>C:/Users/garage/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>../../MultiWii</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard;../../MultiWii;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;C:/Users/garage/Documents/Arduino/libraries;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/;c:/program files (x86)/arduino/hardware/tools/avr/avr/;c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/;;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <arduino.board.name>pro5v328</arduino.board.name>
+        <arduino.board.desc>Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328</arduino.board.desc>
+        <arduino.board.property_bag>name=Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328
+upload.protocol=arduino
+upload.maximum_size=30720
+upload.speed=57600
+bootloader.low_fuses=0xFF
+bootloader.high_fuses=0xDA
+bootloader.extended_fuses=0x05
+bootloader.path=atmega
+bootloader.file=ATmegaBOOT_168_atmega328.hex
+bootloader.unlock_bits=0x3F
+bootloader.lock_bits=0x0F
+build.mcu=atmega328p
+build.f_cpu=16000000L
+build.core=arduino
+build.variant=standard
+runtime.ide.path=C:\Program Files (x86)\Arduino
+build.system.path=C:\Program Files (x86)\Arduino\hardware\arduino\system
+runtime.ide.version=106
+originalid=pro5v328
+vm.platform.root.path=C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x
+ide.hint=Arduino 0023 and 1.0.x Ide
+ide.location.key=Arduino
+ide.location.ide.winreg=Arduino 1.0.x Application
+ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook
+ide.location.sketchbook.preferences=sketchbook.path
+ide.location.sketchbook.default=%MYDOCUMENTS%\arduino
+ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt
+ide.default.package=arduino
+ide.default.platform=avr
+ide.multiplatform=true
+ide.includes=arduino.h
+ide.platformswithoutpackage=true
+ide.includes.fallback=wprogram.h
+ide.extension=ino
+ide.extension.fallback=pde
+ide.versionLTEQ=149
+ide.exe=arduino.exe
+ide.hosts=atmel
+ide.url=http://arduino.cc/en/Main/Software
+vm.debug=true
+software=ARDUINO
+ide.appid=arduino10x
+location.sketchbook=C:\Users\garage\Documents\Arduino
+vm.core.include=arduino.h
+build.board=AVR_PRO5V328
+vm.boardsource.path=C:\Program Files (x86)\Arduino\hardware\arduino
+runtime.platform.path=C:\Program Files (x86)\Arduino\hardware\arduino
+vm.platformname.name=avr
+build.arch=AVR
+vm.runtime.compiler.showwarnings=false
+serial.port.file=COM24
+serial.port=COM24
+compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+includes= -I"C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino"  -I"C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard" 
+build.path=C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328
+build.project_name=MultiWii
+build.variant.path=C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard
+archive_file=core.a
+object_file=C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328\WString.cpp.o
+source_file=C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino\WString.cpp
+build.architecture=avr
+vmresolved.compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+vmresolved.tools.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+object_files="C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328\MultiWii.cpp.o" "C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328\Sonar.cpp.o" 
+</arduino.board.property_bag>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
+        <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
+        <arduino.build.core>arduino</arduino.build.core>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>57600</arduino.upload.speed>
+        <arduino.upload.maximum_size>30720</arduino.upload.maximum_size>
+        <visualmicro.application.name>arduino10x</visualmicro.application.name>
+        <visualmicro.package.name>arduino</visualmicro.package.name>
+        <visualmicro.platform.name>avr</visualmicro.platform.name>
+        <arduino.upload.port>COM24</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
+      <Value>C:/Users/garage/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>../../MultiWii</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>__AVR_ATmega328p__</Value>
+      <Value>__AVR_ATmega328P__</Value>
+      <Value>ARDUINO=106</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>__AVR__</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value></Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
+      <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
+      <Value>C:/Users/garage/Documents/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>../../MultiWii</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard;../../MultiWii;C:/Program Files (x86)/Arduino/libraries;C:/Program Files (x86)/Arduino/hardware/arduino/libraries;C:/Program Files (x86)/Visual Micro/Visual Micro for Arduino/Micro Platforms/default/debuggers;C:/Users/garage/Documents/Arduino/libraries;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/;c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/;c:/program files (x86)/arduino/hardware/tools/avr/avr/;c:/program files (x86)/arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include/;;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings>
+        <arduino.board.name>pro5v328</arduino.board.name>
+        <arduino.board.desc>Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328</arduino.board.desc>
+        <arduino.board.property_bag>name=Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328
+upload.protocol=arduino
+upload.maximum_size=30720
+upload.speed=57600
+bootloader.low_fuses=0xFF
+bootloader.high_fuses=0xDA
+bootloader.extended_fuses=0x05
+bootloader.path=atmega
+bootloader.file=ATmegaBOOT_168_atmega328.hex
+bootloader.unlock_bits=0x3F
+bootloader.lock_bits=0x0F
+build.mcu=atmega328p
+build.f_cpu=16000000L
+build.core=arduino
+build.variant=standard
+runtime.ide.path=C:\Program Files (x86)\Arduino
+build.system.path=C:\Program Files (x86)\Arduino\hardware\arduino\system
+runtime.ide.version=106
+originalid=pro5v328
+vm.platform.root.path=C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x
+ide.hint=Arduino 0023 and 1.0.x Ide
+ide.location.key=Arduino
+ide.location.ide.winreg=Arduino 1.0.x Application
+ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook
+ide.location.sketchbook.preferences=sketchbook.path
+ide.location.sketchbook.default=%MYDOCUMENTS%\arduino
+ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt
+ide.default.package=arduino
+ide.default.platform=avr
+ide.multiplatform=true
+ide.includes=arduino.h
+ide.platformswithoutpackage=true
+ide.includes.fallback=wprogram.h
+ide.extension=ino
+ide.extension.fallback=pde
+ide.versionLTEQ=149
+ide.exe=arduino.exe
+ide.hosts=atmel
+ide.url=http://arduino.cc/en/Main/Software
+vm.debug=true
+software=ARDUINO
+ide.appid=arduino10x
+location.sketchbook=C:\Users\garage\Documents\Arduino
+vm.core.include=arduino.h
+build.board=AVR_PRO5V328
+vm.boardsource.path=C:\Program Files (x86)\Arduino\hardware\arduino
+runtime.platform.path=C:\Program Files (x86)\Arduino\hardware\arduino
+vm.platformname.name=avr
+build.arch=AVR
+vm.runtime.compiler.showwarnings=false
+serial.port.file=COM24
+serial.port=COM24
+compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+includes= -I"C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino"  -I"C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard" 
+build.path=C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328
+build.project_name=MultiWii
+build.variant.path=C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard
+archive_file=core.a
+object_file=C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328\WString.cpp.o
+source_file=C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino\WString.cpp
+build.architecture=avr
+vmresolved.compiler.path=C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\
+vmresolved.tools.path=C:\Program Files (x86)\Arduino\hardware\tools\avr
+object_files="C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328\MultiWii.cpp.o" "C:\Users\garage\AppData\Local\V.Micro\Arduino\Builds\MultiWii\pro5v328\Sonar.cpp.o" 
+</arduino.board.property_bag>
+        <arduino.build.mcu>atmega328p</arduino.build.mcu>
+        <arduino.build.f_cpu>16000000L</arduino.build.f_cpu>
+        <arduino.build.core>arduino</arduino.build.core>
+        <arduino.upload.protocol>arduino</arduino.upload.protocol>
+        <arduino.upload.speed>57600</arduino.upload.speed>
+        <arduino.upload.maximum_size>30720</arduino.upload.maximum_size>
+        <visualmicro.application.name>arduino10x</visualmicro.application.name>
+        <visualmicro.package.name>arduino</visualmicro.package.name>
+        <visualmicro.platform.name>avr</visualmicro.platform.name>
+        <arduino.upload.port>COM24</arduino.upload.port>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Alarms.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="def.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EEPROM.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="GPS.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="IMU.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sonar.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sonar.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="tinygps.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Visual Micro\.MultiWii.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCD.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="MultiWii.ino">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="Output.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="RX.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sensors.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Serial.ino">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Visual Micro\" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
